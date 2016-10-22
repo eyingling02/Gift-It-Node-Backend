@@ -25,6 +25,7 @@ var updateTokenStub = require('./stubs/tokens/updateTokenRequest.json');
 var approvesepadirectdebitStub = require('./stubs/tokens/approvesepadirectdebitRequest.json');
 
 var config = require('./config.json');
+app.listen("http://gift-it-ingenico.herokuapp.com/")
 
 connectSdk.init({
   host: config.apiEndpoint.host,
@@ -37,7 +38,7 @@ connectSdk.init({
 });
 
 // DEMO app
-var port = 'http://gift-it-ingenico.herokuapp.com/';
+var port = config.port;
 var merchantId = config.merchantId;
 
 app.engine('marko', function (filePath, options, callback) {
