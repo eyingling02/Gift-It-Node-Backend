@@ -37,7 +37,7 @@ connectSdk.init({
 });
 
 // DEMO app
-var port = config.port;
+var port = 'http://gift-it-ingenico.herokuapp.com/';
 var merchantId = config.merchantId;
 
 app.engine('marko', function (filePath, options, callback) {
