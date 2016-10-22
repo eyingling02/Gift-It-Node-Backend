@@ -1,0 +1,27 @@
+{
+  "name": "Gift-It-Node-Backend",
+  "version": "1.0.0",
+  "description": "optimized e-payments for crowd-based locations using ibeacon and Ingenico technology",
+  "main": "server.js",
+  "dependencies": {
+    "connect-sdk-nodejs": "1.1.0",
+    "express": "^4.14.0",
+    "log4js": "^0.6.33",
+    "marko": "^3.0.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyingling02/Gift-It-Node-Backend"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ingenico.js"
+  },
+  "author": "Georgia Rust, Spencer Dezart-Smith, Erica Yingling, Kaitlyn McPartland",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/eyingling02/Gift-It-Node-Backend/issues"
+  },
+  "homepage": "https://github.com/eyingling02/Gift-It-Node-Backend#readme"
+}
