@@ -4,7 +4,7 @@
   "description": "optimized e-payments for crowd-based locations using ibeacon and Ingenico technology",
   "main": "server.js",
   "dependencies": {
-    "connect-sdk-nodejs": "1.1.0",
+    "connect-sdk-nodejs": "1.1.1",
     "express": "^4.14.0",
     "log4js": "^0.6.33",
     "marko": "^3.0.5"
