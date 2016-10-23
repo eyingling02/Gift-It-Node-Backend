@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
 var marko = require('marko');
 require('marko/node-require').install();
 var connectSdk = require('connect-sdk-nodejs');
@@ -91,10 +93,11 @@ app.get('/hostedcheckoutstatus/:hostedCheckoutId', function (req, res) {
 
 // payments
 app.post('/payments/createPayment', function (req, res) {
+  var json = req.body
   paymentContext.idemPotence = {
     key: 'idempotence'
   };
-  connectSdk.payments.create(merchantId, createPaymentStub, paymentContext, function (error, sdkResponse) {
+  connectSdk.payments.create(merchantId, json, paymentContext, function (error, sdkResponse) {
     render(res, error, sdkResponse);
   });
 });
