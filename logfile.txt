@@ -1089,3 +1089,4 @@
 }
 [2016-10-22 16:28:14.789] [INFO] my app - server running at http://localhost:8080
 [2016-10-22 16:56:53.142] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:12:47.400] [INFO] my app - server running at http://localhost:8080
