@@ -8,22 +8,22 @@
       "merchantCustomerId": "1234",
       "personalInformation": {
         "name": {
-          "title": "Mr.",
-          "firstName": "Wile",
-          "surnamePrefix": "E.",
-          "surname": "Coyote"
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
         },
-        "gender": "male",
-        "dateOfBirth": "19490917"
+        "gender": "",
+        "dateOfBirth": ""
       },
       "companyInformation": {
-        "name": "Acme Labs"
+        "name": ""
       },
       "locale": "en_GB",
       "billingAddress": {
         "street": "Desertroad",
         "houseNumber": "13",
-        "additionalInfo": "b",
+        "additionalInfo": "",
         "zip": "84536",
         "city": "Monument Valley",
         "state": "Utah",
@@ -31,34 +31,34 @@
       },
       "shippingAddress": {
         "name": {
-          "title": "Miss",
-          "firstName": "Road",
-          "surname": "Runner"
+          "title": "",
+          "firstName": "",
+          "surname": ""
         },
-        "street": "Desertroad",
-        "houseNumber": "1",
-        "additionalInfo": "Suite II",
-        "zip": "84536",
-        "city": "Monument Valley",
-        "state": "Utah",
-        "countryCode": "US"
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
       },
       "contactDetails": {
-        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "emailAddress": "",
         "phoneNumber": "+1234567890",
-        "faxNumber": "+1234567891",
+        "faxNumber": "",
         "emailMessageType": "html"
       },
       "vatNumber": "1234AB5678CD"
     },
     "references": {
-      "merchantOrderId": 123456,
-      "merchantReference": "AcmeOrder0001",
+      "merchantOrderId": "",
+      "merchantReference": "",
       "invoiceData": {
         "invoiceNumber": "000000123",
         "invoiceDate": "20140306191500"
       },
-      "descriptor": "Fast and Furry-ous"
+      "descriptor": ""
     },
     "items": [
       {
@@ -69,7 +69,7 @@
         "invoiceData": {
           "nrOfItems": "1",
           "pricePerItem": 2500,
-          "description": "ACME Super Outfit"
+          "description": ""
         }
       },
       {
@@ -78,9 +78,9 @@
           "amount": 480
         },
         "invoiceData": {
-          "nrOfItems": "12",
-          "pricePerItem": 40,
-          "description": "Aspirin"
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
         }
       }
     ]

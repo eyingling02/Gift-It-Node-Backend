@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
 var marko = require('marko');
 require('marko/node-require').install();
 var connectSdk = require('connect-sdk-nodejs');
@@ -95,7 +97,8 @@ app.post('/payments/createPayment', function (req, res) {
   paymentContext.idemPotence = {
     key: 'idempotence'
   };
-  connectSdk.payments.create(merchantId, createPaymentStub, paymentContext, function (error, sdkResponse) {
+  var json = req.body;
+  connectSdk.payments.create(merchantId, json, paymentContext, function (error, sdkResponse) {
     render(res, error, sdkResponse);
   });
 });

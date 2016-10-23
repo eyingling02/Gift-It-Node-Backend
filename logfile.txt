@@ -1090,3 +1090,5893 @@
 [2016-10-22 16:28:14.789] [INFO] my app - server running at http://localhost:8080
 [2016-10-22 16:56:53.142] [INFO] my app - server running at http://localhost:8080
 [2016-10-22 17:12:47.400] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:15:35.428] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:15:42.654] [INFO] my app - Request with Message ID: 638496e7-f413-491e-9d77-6a3c232f34b5, POST to /v1/2415/sessions, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:15:42 GMT",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "tokens": [
+    "122c5b4d-dd40-49f0-b7c9-3594212167a9",
+    "126166b16ed04b3ab85fb06da1d7a167",
+    "226166b16ed04b3ab85fb06da1d7a167",
+    "326166b16ed04b3ab85fb06da1d7a167",
+    "426166b16ed04b3ab85fb06da1d7a167"
+  ]
+}
+[2016-10-22 17:15:44.121] [INFO] my app - Response from Message ID: 638496e7-f413-491e-9d77-6a3c232f34b5, status: 200, headers: {
+  "date": "Sun, 23 Oct 2016 00:15:43 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "clientSessionId": "a72738728eb84667b35717a4969d17e4",
+  "customerId": "2415-455d22ec92494beb92641ab51210538d",
+  "invalidTokens": [
+    "122c5b4d-dd40-49f0-b7c9-3594212167a9",
+    "126166b16ed04b3ab85fb06da1d7a167",
+    "226166b16ed04b3ab85fb06da1d7a167",
+    "326166b16ed04b3ab85fb06da1d7a167",
+    "426166b16ed04b3ab85fb06da1d7a167"
+  ],
+  "region": "EU"
+}
+[2016-10-22 17:17:52.524] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:23:06.247] [INFO] my app - Request with Message ID: 4ce362f8-93db-47ca-965a-9e9d61796e73, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:23:06 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "Mr.",
+          "firstName": "Wile",
+          "surnamePrefix": "E.",
+          "surname": "Coyote"
+        },
+        "gender": "male",
+        "dateOfBirth": "19490917"
+      },
+      "companyInformation": {
+        "name": "Acme Labs"
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "Miss",
+          "firstName": "Road",
+          "surname": "Runner"
+        },
+        "street": "Desertroad",
+        "houseNumber": "1",
+        "additionalInfo": "Suite II",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": "Fast and Furry-ous"
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": "ACME Super Outfit"
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "12",
+          "pricePerItem": 40,
+          "description": "Aspirin"
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:23:07.390] [INFO] my app - Response from Message ID: 4ce362f8-93db-47ca-965a-9e9d61796e73, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:23:07 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:24:55.975] [INFO] my app - Request with Message ID: f18433c6-dbbb-4f65-9a25-1672da03fd88, POST to /v1/2415/hostedcheckouts, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:24:55 GMT",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "USD",
+      "amount": 2345
+    },
+    "customer": {
+      "billingAddress": {
+        "countryCode": "US"
+      }
+    }
+  },
+  "hostedCheckoutSpecificInput": {
+    "variant": "testVariant",
+    "locale": "en_GB"
+  }
+}
+[2016-10-22 17:24:56.806] [INFO] my app - Response from Message ID: f18433c6-dbbb-4f65-9a25-1672da03fd88, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:24:56 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/hostedcheckouts/00000024150000000011",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "RETURNMAC": "17f4bb2f-0990-4761-a20e-fbc0172fbfe3",
+  "hostedCheckoutId": "00000024150000000011",
+  "partialRedirectUrl": "sandbox.poweredbyglobalcollect.com/checkout/2415-a9d465ea274940a6b8818937fcd06b2d:00000024150000000011:e0917bf8e1fe4f259ee4a1ea68657ffb"
+}
+[2016-10-22 17:32:41.336] [INFO] my app - Request with Message ID: 2d8eee7e-519c-4b2d-b176-c657a0fe1028, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:32:41 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "Mr.",
+          "firstName": "Wile",
+          "surnamePrefix": "E.",
+          "surname": "Coyote"
+        },
+        "gender": "male",
+        "dateOfBirth": "19490917"
+      },
+      "companyInformation": {
+        "name": "Acme Labs"
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "Miss",
+          "firstName": "Road",
+          "surname": "Runner"
+        },
+        "street": "Desertroad",
+        "houseNumber": "1",
+        "additionalInfo": "Suite II",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": "Fast and Furry-ous"
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": "ACME Super Outfit"
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "12",
+          "pricePerItem": 40,
+          "description": "Aspirin"
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:32:42.063] [INFO] my app - Response from Message ID: 2d8eee7e-519c-4b2d-b176-c657a0fe1028, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:32:41 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:34:04.736] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:34:09.514] [INFO] my app - Request with Message ID: 3d1e5536-bd31-49d5-9864-68dcbaae6ead, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:34:09 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:34:10.567] [INFO] my app - Response from Message ID: 3d1e5536-bd31-49d5-9864-68dcbaae6ead, status: 400, headers: {
+  "date": "Sun, 23 Oct 2016 00:34:10 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "errorId": "d7b7f3a3-4bf9-4db3-bcbd-b5b708f071c9",
+  "errors": [
+    {
+      "code": "20000000",
+      "propertyName": "order.customer",
+      "message": "PARAMETER_NOT_FOUND_IN_REQUEST",
+      "httpStatusCode": 400
+    }
+  ]
+}
+[2016-10-22 17:37:51.459] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:37:53.984] [INFO] my app - Request with Message ID: 201265b3-2fdd-4114-8fe7-90cc2dd78c99, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:37:53 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "Miss",
+          "firstName": "Road",
+          "surname": "Runner"
+        },
+        "street": "Desertroad",
+        "houseNumber": "1",
+        "additionalInfo": "Suite II",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:37:55.179] [INFO] my app - Response from Message ID: 201265b3-2fdd-4114-8fe7-90cc2dd78c99, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:37:54 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:38:44.401] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:38:49.232] [INFO] my app - Request with Message ID: 5ab9a1f3-4579-4193-a693-aac02c7dde74, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:38:49 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:38:50.379] [INFO] my app - Response from Message ID: 5ab9a1f3-4579-4193-a693-aac02c7dde74, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:38:50 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:43:26.001] [INFO] my app - Request with Message ID: 74267a19-3f95-4c81-9631-4ad53ec17dd5, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:43:25 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:43:27.280] [INFO] my app - Response from Message ID: 74267a19-3f95-4c81-9631-4ad53ec17dd5, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:43:27 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:43:39.186] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:44:31.647] [INFO] my app - Request with Message ID: 4c472fd6-b537-40b4-a47f-77b871cb0aa7, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:44:31 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:44:32.946] [INFO] my app - Response from Message ID: 4c472fd6-b537-40b4-a47f-77b871cb0aa7, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:44:32 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:45:16.617] [INFO] my app - Request with Message ID: a536a076-a932-4119-827b-7d35cb34cf3a, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:45:16 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:45:17.848] [INFO] my app - Response from Message ID: a536a076-a932-4119-827b-7d35cb34cf3a, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:45:17 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:46:17.418] [INFO] my app - Request with Message ID: 7b5d8a82-4342-4871-83ee-9bb6df627cd3, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:46:17 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:46:18.255] [INFO] my app - Response from Message ID: 7b5d8a82-4342-4871-83ee-9bb6df627cd3, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:46:17 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:48:10.968] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:48:15.810] [INFO] my app - Request with Message ID: 3a9f4948-d89c-4225-b1e4-592ce7a3f33f, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:48:15 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:48:17.148] [INFO] my app - Response from Message ID: 3a9f4948-d89c-4225-b1e4-592ce7a3f33f, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:48:16 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:48:55.152] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:48:59.328] [INFO] my app - Request with Message ID: a50482f4-7e71-4b5b-81aa-b41ecde3f934, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:48:59 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:49:00.558] [INFO] my app - Response from Message ID: a50482f4-7e71-4b5b-81aa-b41ecde3f934, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:49:00 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:49:57.585] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:50:00.744] [INFO] my app - Request with Message ID: 204f9580-c618-40a7-b22b-e7d3025363b5, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:50:00 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:50:01.960] [INFO] my app - Response from Message ID: 204f9580-c618-40a7-b22b-e7d3025363b5, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:50:01 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:51:36.547] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:51:39.930] [INFO] my app - Request with Message ID: ae02ee9a-f6bb-456a-b3a5-b74e53260302, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:51:39 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:51:41.788] [INFO] my app - Response from Message ID: ae02ee9a-f6bb-456a-b3a5-b74e53260302, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:51:41 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:52:22.159] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:52:24.863] [INFO] my app - Request with Message ID: 85156d5e-e06f-4da6-a6bb-5865e72bc7d1, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:52:24 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:52:26.003] [INFO] my app - Response from Message ID: 85156d5e-e06f-4da6-a6bb-5865e72bc7d1, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:52:25 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 17:53:08.135] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 17:53:39.880] [INFO] my app - Request with Message ID: 3759f686-3f7c-4322-8610-a2d660e6dcde, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 00:53:39 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 17:53:41.212] [INFO] my app - Response from Message ID: 3759f686-3f7c-4322-8610-a2d660e6dcde, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 00:53:40 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:15:20.496] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:15:32.573] [INFO] my app - Request with Message ID: 559d2ed9-675d-41ad-88f3-8b21937bb36a, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:15:32 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:15:33.876] [INFO] my app - Response from Message ID: 559d2ed9-675d-41ad-88f3-8b21937bb36a, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:15:33 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:17:33.479] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:17:36.693] [INFO] my app - Request with Message ID: 989e5f71-2e2c-44a4-8d29-75165fef4a3d, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:17:36 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:17:37.811] [INFO] my app - Response from Message ID: 989e5f71-2e2c-44a4-8d29-75165fef4a3d, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:17:37 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:18:45.946] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:18:51.166] [INFO] my app - Request with Message ID: b08c8bd2-d470-4efd-88d5-cc5b0099098d, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:18:51 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:18:52.286] [INFO] my app - Response from Message ID: b08c8bd2-d470-4efd-88d5-cc5b0099098d, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:18:52 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:19:45.540] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:19:48.452] [INFO] my app - Request with Message ID: 59e97dc9-8f7d-4590-aeee-861c44a2411b, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:19:48 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:19:49.575] [INFO] my app - Response from Message ID: 59e97dc9-8f7d-4590-aeee-861c44a2411b, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:19:49 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:22:10.189] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:22:14.014] [INFO] my app - Request with Message ID: 472f9f07-50e8-41de-b722-de02b6b7ef71, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:22:13 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:22:15.244] [INFO] my app - Response from Message ID: 472f9f07-50e8-41de-b722-de02b6b7ef71, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:22:15 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:22:43.009] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:22:45.645] [INFO] my app - Request with Message ID: 831b343c-0f4c-464f-9ac4-ddbc476df86f, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:22:45 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:22:46.766] [INFO] my app - Response from Message ID: 831b343c-0f4c-464f-9ac4-ddbc476df86f, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:22:46 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 18:29:31.795] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 18:30:03.120] [INFO] my app - Request with Message ID: d9e864cc-31bd-46c4-b5d1-fb8e08ae256a, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 01:30:03 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 18:30:04.262] [INFO] my app - Response from Message ID: d9e864cc-31bd-46c4-b5d1-fb8e08ae256a, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 01:30:04 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:07:19.000] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 19:07:22.842] [INFO] my app - Request with Message ID: 5e159070-693a-4f91-b228-892ffcf94f06, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:07:22 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:07:24.058] [INFO] my app - Response from Message ID: 5e159070-693a-4f91-b228-892ffcf94f06, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:07:24 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:30:29.377] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 19:30:33.056] [INFO] my app - Request with Message ID: 89684d0a-333f-48e7-8c9a-7748045aa184, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:30:33 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:30:34.414] [INFO] my app - Response from Message ID: 89684d0a-333f-48e7-8c9a-7748045aa184, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:30:34 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:31:21.861] [INFO] my app - Request with Message ID: 67c4872b-b65c-4a3e-955d-555bd2985f05, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:31:21 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:31:23.146] [INFO] my app - Response from Message ID: 67c4872b-b65c-4a3e-955d-555bd2985f05, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:31:22 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:32:30.583] [INFO] my app - Request with Message ID: 39be3cec-c919-476d-a681-55326959c357, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:32:30 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:32:32.087] [INFO] my app - Response from Message ID: 39be3cec-c919-476d-a681-55326959c357, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:32:31 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:33:57.286] [INFO] my app - Request with Message ID: 461c5c91-a16b-4308-aecc-b47bb4715386, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:33:57 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:33:58.571] [INFO] my app - Response from Message ID: 461c5c91-a16b-4308-aecc-b47bb4715386, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:33:58 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:34:11.376] [INFO] my app - Request with Message ID: 48614097-b734-490a-bc37-f1812b879d00, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:34:11 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": ""
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:34:12.150] [INFO] my app - Response from Message ID: 48614097-b734-490a-bc37-f1812b879d00, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:34:11 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:36:26.843] [INFO] my app - server running at http://localhost:8080
+[2016-10-22 19:39:15.410] [INFO] my app - Request with Message ID: cf038ad0-46d5-459e-8a34-c1c6839f633e, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:39:15 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      },
+      "contactDetails": {
+        "emailAddress": "",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:39:16.659] [INFO] my app - Response from Message ID: cf038ad0-46d5-459e-8a34-c1c6839f633e, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:39:16 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:39:40.554] [INFO] my app - Request with Message ID: 56680625-0b0f-4b38-bb74-c4d6c7e823e1, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:39:40 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        },
+        "gender": "",
+        "dateOfBirth": ""
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      }
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:39:41.878] [INFO] my app - Response from Message ID: 56680625-0b0f-4b38-bb74-c4d6c7e823e1, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:39:41 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:40:01.942] [INFO] my app - Request with Message ID: 70b13d8a-82ca-47b2-b501-3b3a170e3c2c, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:40:01 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        }
+      },
+      "companyInformation": {
+        "name": ""
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      }
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:40:03.028] [INFO] my app - Response from Message ID: 70b13d8a-82ca-47b2-b501-3b3a170e3c2c, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:40:02 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:40:29.739] [INFO] my app - Request with Message ID: dac13e1d-2753-42ff-abff-66c4476d2439, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:40:29 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surname": ""
+        },
+        "street": "",
+        "houseNumber": "",
+        "additionalInfo": "",
+        "zip": "",
+        "city": "",
+        "state": "",
+        "countryCode": ""
+      }
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:40:30.924] [INFO] my app - Response from Message ID: dac13e1d-2753-42ff-abff-66c4476d2439, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:40:30 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:40:41.333] [INFO] my app - Request with Message ID: da7a22a5-d058-4b59-b13e-8c5634db0c26, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:40:41 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "",
+          "pricePerItem": 2500,
+          "description": ""
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:40:42.528] [INFO] my app - Response from Message ID: da7a22a5-d058-4b59-b13e-8c5634db0c26, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:40:42 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:41:16.508] [INFO] my app - Request with Message ID: 4528a227-4cd7-42ea-b315-1f2f2ecf6748, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:41:16 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:41:17.334] [INFO] my app - Response from Message ID: 4528a227-4cd7-42ea-b315-1f2f2ecf6748, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:41:16 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:41:56.241] [INFO] my app - Request with Message ID: 463ede48-a7bf-46d2-8b17-f9104aad1583, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:41:56 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "",
+      "personalInformation": {
+        "name": {
+          "title": "",
+          "firstName": "",
+          "surnamePrefix": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:41:56.951] [INFO] my app - Response from Message ID: 463ede48-a7bf-46d2-8b17-f9104aad1583, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:41:56 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:42:43.203] [INFO] my app - Request with Message ID: f10bfda9-ce00-43b9-980f-0050518b9c66, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:42:43 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "personalInformation": {
+        "name": {
+          "firstName": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:42:43.920] [INFO] my app - Response from Message ID: f10bfda9-ce00-43b9-980f-0050518b9c66, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:42:43 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:43:22.050] [INFO] my app - Request with Message ID: bbd4ecc1-b60a-45b1-ae35-ea2a5b22ff7a, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:43:22 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "personalInformation": {
+        "name": {
+          "firstName": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:43:22.773] [INFO] my app - Response from Message ID: bbd4ecc1-b60a-45b1-ae35-ea2a5b22ff7a, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:43:22 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:44:42.050] [INFO] my app - Request with Message ID: c6b773dd-bff1-4667-850d-2dcc8e412ba4, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:44:42 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "merchantCustomerId": "1234",
+      "personalInformation": {
+        "name": {
+          "title": "Mr.",
+          "firstName": "Wile",
+          "surnamePrefix": "E.",
+          "surname": "Coyote"
+        },
+        "gender": "male",
+        "dateOfBirth": "19490917"
+      },
+      "companyInformation": {
+        "name": "Acme Labs"
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "shippingAddress": {
+        "name": {
+          "title": "Miss",
+          "firstName": "Road",
+          "surname": "Runner"
+        },
+        "street": "Desertroad",
+        "houseNumber": "1",
+        "additionalInfo": "Suite II",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      },
+      "contactDetails": {
+        "emailAddress": "wile.e.coyote@acmelabs.com",
+        "phoneNumber": "+1234567890",
+        "faxNumber": "+1234567891",
+        "emailMessageType": "html"
+      },
+      "vatNumber": "1234AB5678CD"
+    },
+    "references": {
+      "merchantOrderId": 123456,
+      "merchantReference": "AcmeOrder0001",
+      "invoiceData": {
+        "invoiceNumber": "000000123",
+        "invoiceDate": "20140306191500"
+      },
+      "descriptor": "Fast and Furry-ous"
+    },
+    "items": [
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 2500
+        },
+        "invoiceData": {
+          "nrOfItems": "1",
+          "pricePerItem": 2500,
+          "description": "ACME Super Outfit"
+        }
+      },
+      {
+        "amountOfMoney": {
+          "currencyCode": "EUR",
+          "amount": 480
+        },
+        "invoiceData": {
+          "nrOfItems": "12",
+          "pricePerItem": 40,
+          "description": "Aspirin"
+        }
+      }
+    ]
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:44:43.128] [INFO] my app - Response from Message ID: c6b773dd-bff1-4667-850d-2dcc8e412ba4, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:44:42 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:48:18.972] [INFO] my app - Request with Message ID: 91cdb9bf-ad04-4a11-afe6-25154ae3adc9, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:48:18 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "personalInformation": {
+        "name": {
+          "firstName": "",
+          "surname": ""
+        }
+      },
+      "locale": "en_GB",
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:48:20.060] [INFO] my app - Response from Message ID: 91cdb9bf-ad04-4a11-afe6-25154ae3adc9, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:48:19 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:48:41.360] [INFO] my app - Request with Message ID: d0b17e60-5b6a-46fb-86ce-38ab0c44eb12, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:48:41 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "personalInformation": {
+        "name": {
+          "firstName": "",
+          "surname": ""
+        }
+      },
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "additionalInfo": "b",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:48:42.100] [INFO] my app - Response from Message ID: d0b17e60-5b6a-46fb-86ce-38ab0c44eb12, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:48:41 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
+[2016-10-22 19:51:56.246] [INFO] my app - Request with Message ID: 2db40a88-0cbb-442d-a7f3-f0845a235800, POST to /v1/2415/payments?currencyCode=EUR&countryCode=NL&locale=en_GB&amount=1000&isRecurring=true, headers: {
+  "Content-Type": "application/json",
+  "Date": "Sun, 23 Oct 2016 02:51:56 GMT",
+  "X-GCS-Idempotence-Key": "idempotence",
+  "X-GCS-ServerMetaInfo": "eyJzZGtDcmVhdG9yIjoiSW5nZW5pY28iLCJzZGtJZGVudGlmaWVyIjoiTm9kZWpzU2VydmVyU0RLL3YxLjEuMCIsInBsYXRmb3JtSWRlbnRpZmllciI6InVuZGVmaW5lZCBOb2RlLmpzLzYuNy4wIn0=",
+  "Authorization": "********"
+}, body: {
+  "order": {
+    "amountOfMoney": {
+      "currencyCode": "EUR",
+      "amount": 2980
+    },
+    "customer": {
+      "personalInformation": {
+        "name": {
+          "firstName": "",
+          "surname": ""
+        }
+      },
+      "billingAddress": {
+        "street": "Desertroad",
+        "houseNumber": "13",
+        "zip": "84536",
+        "city": "Monument Valley",
+        "state": "Utah",
+        "countryCode": "US"
+      }
+    }
+  },
+  "cardPaymentMethodSpecificInput": {
+    "paymentProductId": 1,
+    "skipAuthentication": false,
+    "card": {
+      "cvv": "***",
+      "cardNumber": "************7977",
+      "expiryDate": "**20",
+      "cardholderName": "Wile E. Coyote"
+    }
+  }
+}
+[2016-10-22 19:51:56.921] [INFO] my app - Response from Message ID: 2db40a88-0cbb-442d-a7f3-f0845a235800, status: 201, headers: {
+  "date": "Sun, 23 Oct 2016 02:51:56 GMT",
+  "server": "Apache/2.4.16 (Unix) OpenSSL/1.0.1t",
+  "location": "https://api-sandbox.globalcollect.com:443/v1/2415/payments/000000241500000000070000100001",
+  "x-gcs-idempotence-request-timestamp": "1477174083977",
+  "x-powered-by": "Servlet/3.0 JSP/2.2",
+  "connection": "close",
+  "transfer-encoding": "chunked",
+  "content-type": "application/json"
+}, body: {
+  "creationOutput": {
+    "additionalReference": "AcmeOrder0001",
+    "externalReference": "AcmeOrder0001"
+  },
+  "payment": {
+    "id": "000000241500000000070000100001",
+    "paymentOutput": {
+      "amountOfMoney": {
+        "amount": 2980,
+        "currencyCode": "EUR"
+      },
+      "references": {
+        "merchantOrderId": 123456,
+        "merchantReference": "AcmeOrder0001",
+        "paymentReference": "0"
+      },
+      "paymentMethod": "card",
+      "cardPaymentMethodSpecificOutput": {
+        "paymentProductId": 1,
+        "authorisationCode": "OK1131",
+        "card": {
+          "cardNumber": "************7977",
+          "expiryDate": "**20"
+        },
+        "fraudResults": {
+          "fraudServiceResult": "error",
+          "avsResult": "0",
+          "cvvResult": "0"
+        }
+      }
+    },
+    "status": "PENDING_APPROVAL",
+    "statusOutput": {
+      "isCancellable": true,
+      "statusCategory": "PENDING_MERCHANT",
+      "statusCode": 600,
+      "statusCodeChangeDateTime": "20161023000804",
+      "isAuthorized": true,
+      "isRefundable": false
+    }
+  }
+}
