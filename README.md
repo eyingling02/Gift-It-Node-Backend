@@ -25,7 +25,7 @@ View how much has been donated at the event so far.
 
 ![images](/images/graph_page.png) ![images](/images/toggled_graph.png)
 
-See your donation history for this.
+See your donation history.
 
 ![images](/images/history_page.png)
 
